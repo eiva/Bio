@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCBI.Variations", "NCBI.Var
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCBI.Alignments", "NCBI.Alignments\NCBI.Alignments.csproj", "{47C50FE7-F894-49B2-AA2C-1039F92740B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCBI.PrimitivesTests", "NCBI.PrimitivesTests\NCBI.PrimitivesTests.csproj", "{A7AE9965-B818-4F22-A79C-E69DBD99863A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCBI.VariationsTests", "NCBI.VariationsTests\NCBI.VariationsTests.csproj", "{9E0911C1-DB0A-4A68-8262-6A113047DB6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{47C50FE7-F894-49B2-AA2C-1039F92740B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47C50FE7-F894-49B2-AA2C-1039F92740B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47C50FE7-F894-49B2-AA2C-1039F92740B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7AE9965-B818-4F22-A79C-E69DBD99863A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7AE9965-B818-4F22-A79C-E69DBD99863A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7AE9965-B818-4F22-A79C-E69DBD99863A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7AE9965-B818-4F22-A79C-E69DBD99863A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E0911C1-DB0A-4A68-8262-6A113047DB6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E0911C1-DB0A-4A68-8262-6A113047DB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E0911C1-DB0A-4A68-8262-6A113047DB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E0911C1-DB0A-4A68-8262-6A113047DB6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

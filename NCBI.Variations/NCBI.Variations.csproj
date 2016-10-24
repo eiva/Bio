@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="IVariation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spdi.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NCBI.Primitives\NCBI.Primitives.csproj">
