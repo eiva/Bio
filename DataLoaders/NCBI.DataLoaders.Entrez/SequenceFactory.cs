@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NCBI.Primitives;
+using System;
 using System.Net;
 
 namespace NCBI.Primitives.Entrez

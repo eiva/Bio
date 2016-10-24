@@ -13,6 +13,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCBI.PrimitivesTests", "NCB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCBI.VariationsTests", "NCBI.VariationsTests\NCBI.VariationsTests.csproj", "{9E0911C1-DB0A-4A68-8262-6A113047DB6B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataLoaders", "DataLoaders", "{555568D4-919C-42BF-83D8-844D6725DB4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCBI.DataLoaders.Entrez", "DataLoaders\NCBI.DataLoaders.Entrez\NCBI.DataLoaders.Entrez.csproj", "{BA0711CC-D528-42D5-BDFF-ACD491901264}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{A75D2035-C8B5-484E-B979-029B20390E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequenceDownload", "Samples\SequenceDownload\SequenceDownload.csproj", "{677088BD-3340-45F7-BDF3-72B64B6ECDEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,8 +47,20 @@ Global
 		{9E0911C1-DB0A-4A68-8262-6A113047DB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E0911C1-DB0A-4A68-8262-6A113047DB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E0911C1-DB0A-4A68-8262-6A113047DB6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA0711CC-D528-42D5-BDFF-ACD491901264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0711CC-D528-42D5-BDFF-ACD491901264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0711CC-D528-42D5-BDFF-ACD491901264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0711CC-D528-42D5-BDFF-ACD491901264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{677088BD-3340-45F7-BDF3-72B64B6ECDEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{677088BD-3340-45F7-BDF3-72B64B6ECDEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{677088BD-3340-45F7-BDF3-72B64B6ECDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{677088BD-3340-45F7-BDF3-72B64B6ECDEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA0711CC-D528-42D5-BDFF-ACD491901264} = {555568D4-919C-42BF-83D8-844D6725DB4E}
+		{677088BD-3340-45F7-BDF3-72B64B6ECDEB} = {A75D2035-C8B5-484E-B979-029B20390E72}
 	EndGlobalSection
 EndGlobal
