@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NCBI.Primitives
 {
-   public interface SequenceFactory
+   public interface ISequenceFactory
    {
       ISequence Get(SeqId id);
    }

@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entrez\SequenceFactory.cs" />
     <Compile Include="Interval.cs" />
     <Compile Include="ISequence.cs" />
     <Compile Include="ISortable.cs" />

@@ -9,6 +9,10 @@ namespace NCBI.Primitives
 
       public SeqId(string accession, ushort version)
       {
+         if (accession == null)
+         {
+            throw new ArgumentNullException("accession");
+         }
          _accession = accession;
          _version = version;
       }
@@ -30,7 +34,7 @@ namespace NCBI.Primitives
 
       public override string ToString()
       {
-         throw new NotImplementedException();
+         return $"{_accession}.{_version}";
       }
 
       public override int GetHashCode()
