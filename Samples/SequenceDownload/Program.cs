@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Bio.Primitives;
+using Bio.Primitives.Entrez;
+using System;
 
 namespace SequenceDownload
 {
@@ -10,6 +8,10 @@ namespace SequenceDownload
    {
       static void Main(string[] args)
       {
+            var id = new SeqId("XR_242110", 1);
+            var fac = new EntrezSequenceFactory();
+            var seq = fac.Get(id);
+            Console.WriteLine($"{id.ToString()} at 0 = {seq[0]}");
       }
    }
 }

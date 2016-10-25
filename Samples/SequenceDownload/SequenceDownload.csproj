@@ -49,6 +49,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Bio.Primitives\Bio.Primitives.csproj">
+      <Project>{1CA64022-F596-4B1B-A7C0-B0B1C1F6E0DA}</Project>
+      <Name>Bio.Primitives</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataLoaders\Bio.DataLoaders.Entrez\Bio.DataLoaders.Entrez.csproj">
+      <Project>{BA0711CC-D528-42D5-BDFF-ACD491901264}</Project>
+      <Name>Bio.DataLoaders.Entrez</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
