@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Bio.Primitives;
 
 namespace Bio.Variations
 {
-    public interface IVariation : IComparable<IVariation>, IEquatable<IVariation>, ISortable
+    public interface IVariation : IComparable<IVariation>, IEquatable<IVariation>
     {
       SeqId SeqId { get; }
       uint From { get; }

@@ -1,21 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Bio.Primitives
 {
    /// <summary>
    /// Represents interval on a sequence.
    /// </summary>
-   public sealed class Interval : IComparable<Interval>, IEquatable<Interval>, ISortable
+   public sealed class Interval : IComparable<Interval>, IEquatable<Interval>
    {
-      SeqId SeqId { get;  }
-      uint From { get; }
       /// <summary>
-      /// Is on positive strand.
+      /// Sequence id this interval is belongs to.
       /// </summary>
+      SeqId SeqId { get; }
+
+      /// <summary>
+      /// Zero based position of interval on sequence.
+      /// </summary>
+      uint From { get; }
+
       Strand Strand { get; }
 
       uint Length { get; }
@@ -26,11 +27,6 @@ namespace Bio.Primitives
       }
 
       public bool Equals(Interval other)
-      {
-         throw new NotImplementedException();
-      }
-
-      public string ToSortableString()
       {
          throw new NotImplementedException();
       }

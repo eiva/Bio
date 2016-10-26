@@ -5,7 +5,7 @@ namespace Bio.Primitives
     /// <summary>
     /// Represents sequence id in form of accession.version
     /// </summary>
-   public sealed class SeqId : IComparable<SeqId>, IEquatable<SeqId>, ISortable
+   public sealed class SeqId : IComparable<SeqId>, IEquatable<SeqId>
    {
         /// <summary>
         /// Sequence accession.
@@ -29,7 +29,7 @@ namespace Bio.Primitives
 
       public static SeqId FromString(string serialized)
       {
-            if (String.IsNullOrWhiteSpace(serialized))
+            if (string.IsNullOrWhiteSpace(serialized))
                 throw new ArgumentNullException(serialized);
             var parts = serialized.Split('.');
             if (parts.Length != 2)
@@ -65,15 +65,9 @@ namespace Bio.Primitives
             return other.Accession == Accession && other.Version == Version;
         }
 
-      public override string ToString()
-      {
-         return $"{Accession}.{Version}";
-      }
-
-      public override int GetHashCode()
-      {
-            return ToString().GetHashCode();
-      }
+      public override string ToString() => $"{Accession}.{Version}";
+      
+      public override int GetHashCode() => ToString().GetHashCode();
 
       public override bool Equals(object obj)
       {
@@ -81,11 +75,6 @@ namespace Bio.Primitives
             if (s == null)
                 return false;
             return s.Equals(s);
-      }
-
-      public string ToSortableString()
-      {
-         throw new NotImplementedException();
       }
    }
 }
