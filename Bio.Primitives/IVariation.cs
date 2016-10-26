@@ -1,7 +1,6 @@
 ﻿using System;
-using Bio.Primitives;
 
-namespace Bio.Variations
+namespace Bio.Primitives
 {
     public interface IVariation : IComparable<IVariation>, IEquatable<IVariation>
     {

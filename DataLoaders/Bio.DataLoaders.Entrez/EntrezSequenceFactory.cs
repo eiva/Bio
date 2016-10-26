@@ -21,39 +21,7 @@ namespace Bio.Primitives.Entrez
             {
                 sb.Append(result[i]);
             }
-            return new Sequence(sb.ToString());
-        }
-
-        private sealed class Sequence : ISequence
-        {
-            private readonly string _seq;
-
-            public Sequence(string seq)
-            {
-                if (seq == null)
-                    throw new ArgumentNullException("seq");
-                _seq = seq;
-            }
-
-            public char this[uint position] => _seq[(int)position];
-
-            public uint Length => (uint)_seq.Length;
-            
-            public MoleculeType MoleculeType
-            {
-                get
-                {
-                    throw new NotImplementedException();
-                }
-            }
-
-            public SeqId SeqId
-            {
-                get
-                {
-                    throw new NotImplementedException();
-                }
-            }
+            return SequenceUtils.SequenceFromString(id, sb.ToString());
         }
     }
 }

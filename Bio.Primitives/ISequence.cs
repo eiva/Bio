@@ -26,12 +26,4 @@ namespace Bio.Primitives
       /// <returns>Nucleotide.</returns>
       char this[uint position] { get; }
    }
-
-   public static class SequenceUtils
-   {
-      public static string GetString(this ISequence sequence, Interval interval)
-      {
-         throw new NotImplementedException();
-      }
-   }
 }
